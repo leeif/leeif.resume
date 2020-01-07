@@ -55,7 +55,7 @@ theme = "hugo-devresume-theme"
         [[params.skills.list]]
         title = "感兴趣的技术"
         [[params.skills.list.items]]
-        details = "CloudNative/Devops"
+        details = "CloudNative/DevOps"
         [[params.skills.list.items]]
         details = "分布式系统"
         [[params.skills.list.items]]
@@ -131,17 +131,17 @@ theme = "hugo-devresume-theme"
         [[params.projects.list]]
         title = "数据中心及云端等基础设施的运维和管理"
         meta = "GREE(日本)"
-        tagline = "* 负责全公司数千台数据中心服务器和几十个AWS及GCP账号的运维和管理，以及基本运维操作的文档化。\n\n * 对于数据中心的服务器和云端的服务器实例，进行定期硬件，主机更换，操作系统升级等工作。\n\n * 负责中间件的部署和维护，定期进行Apache和MySQL等中间件的升级及调优。\n\n * 负责运维工具的开发和维护。主要包括自动服务器构建，MySQL数据库快照的获取，MySQL自动Failover工具等的开发。"
+        tagline = "* 负责全公司数千台数据中心服务器和几十个AWS及GCP账号的运维和管理，on-call，运维流程的文档化。\n\n * 对于数据中心的服务器和云端的服务器实例，进行定期硬件，主机更换，操作系统升级等工作。\n\n * 负责中间件的部署和维护，定期进行Apache和MySQL等中间件的升级及调优。\n\n * 负责运维工具的开发和维护。主要包括自动服务器构建，MySQL数据库快照的获取，MySQL自动Failover工具等的开发。"
 
         [[params.projects.list]]
         title = "MySQL数据库升级维护"
         meta = "GREE(日本)"
-        tagline = "* 生产环境数据库的MySQL8.0升级 \n\n * 生产环境数据库的RBR（Row-based Replication）化 \n\n * 数据中心的MySQL数据库向云端的迁移(AWS和GCP)"
+        tagline = "* 生产环境数据库的MySQL8.0升级。 \n\n * 生产环境数据库的RBR（Row-based Replication）化。 \n\n * 数据中心的MySQL数据库向云端的迁移(AWS和GCP)。"
 
         [[params.projects.list]]
         title = "URL监视系统的开发和导入"
         meta = "GREE(日本)"
-        tagline = "数据中心的服务器集群使用Ganglia监控系统。负责ganglia python module的维护。AWS及GCP集群使用Prometheus + Grafana监控系统。日志监控和收集使用Fluentd + Sumologic。进入公司以后独立完成URL监控的导入和推进。采用现有的Uptimerobot服务，使用Terraform + Jenkins实现了URL监控的自动化部署和管理。"
+        tagline = "数据中心的服务器集群使用Ganglia监控系统。负责Ganglia Python Module的维护。AWS及GCP集群使用Prometheus + Grafana监控系统。日志监控和收集使用Fluentd + Sumologic。进入公司以后独立完成URL监控的导入和推进。采用现有的Uptimerobot服务，使用Terraform + Jenkins实现了URL监控的自动化管理。"
 
         [[params.projects.list]]
         title = "开发项目组的技术支持"
@@ -152,13 +152,13 @@ theme = "hugo-devresume-theme"
         title = "EasyJapaneseNews应用的开发"
         link = "https://apps.apple.com/jp/app/easy-japanese-news/id1453019967"
         meta = "团队开发"
-        tagline = "工作之余和朋友开发的通过日语新闻学习日语的软件。现已有1500左右的DAU。 前端包括iOS和Android的应用。后端采用Java，Go，Python的多语言微服务的开发。主要包括认证服务（Go），分词服务（Python），新闻服务（Java Spring Boot）。主要负责认后端的开发和持续部署的设计。所有服务采用Docker镜像部署方式，通过Traefik作为中间件进行Blue/Green部署。"
+        tagline = "工作之余和朋友开发的通过日语新闻学习日语的软件。现已有1500左右的DAU。 前端包括iOS和Android的应用。后端采用Java，Go，Python的多语言微服务的开发。主要包括认证服务（Go），分词服务（Python），新闻服务（Java Spring Boot）。主要负责认后端的开发和持续部署的设计。所有服务均采用Docker镜像部署方式，现通过Traefik作为中间件进行Blue/Green部署。"
 
         [[params.projects.list]]
         title = "Pluto"
         link = "https://github.com/leeif/pluto"
         meta = "开源项目"
-        tagline = "为微服务设计的认证服务。提供用户注册和登录功能。通过JWT替代传统的session来实现无状态的认证。通过RBAC的来管理用户的权限，并设计了一套后台Admin系统来操作和管理RBAC。现主要用于EasyJapaneseNews的生产环境。"
+        tagline = "为微服务设计的授权/认证服务。提供用户注册和登录功能。通过JWT替代传统的session来实现无状态的认证。通过RBAC的来管理用户的权限，并设计了一套后台Admin系统来操作和管理RBAC。现主要用于EasyJapaneseNews的生产环境。"
 
         [[params.projects.list]]
         title = "Mercury"
@@ -172,7 +172,7 @@ theme = "hugo-devresume-theme"
         [[params.researchs.list]]
         title = "SDN环境下的分布式应用的Coflow路由优化"
         meta = "硕士毕业研究"
-        tagline = "Coflow是指分布式应用中的一个任务中一组流请求。Coflow请求在其任务中的所有请求完成后完成。Coflow让我们可以在应⽤级别优化⽹络传输。\n\n 本研究主要专注于解决coflow路由问题，该问题的目标是在最小化平均coflow完成时间时实现应用程序级别的改进。本研究提出了一种coflow-aware路由算法，该算法使用模拟退火（Simulate Anneal）算法来减少分布式应用程序作业的平均完成时间。\n\n 此外，我们在基于SDN的网络中设计和实现系统，以使分布式应用程序利用应用程序级路由。本研究分别在小规模网络环境和大规模网络环境中设计实验。实验结果表明，我们的coflow路由方法不仅在最小化平均coflow完成时间方面实现了更好的性能，而且与数据中心网络的其他现有路由解决方案相比，计算负载也非常低。"
+        tagline = "Coflow是指分布式应用中的一个任务中一组流请求。Coflow请求在其任务中的所有请求完成后完成。Coflow让我们可以在应⽤层优化⽹络传输。\n\n 本研究主要专注于解决coflow路由问题，该问题的目标是在最小化平均coflow完成时间时实现应用层的网络优化。本研究提出了一种coflow-aware路由算法，该算法使用模拟退火（Simulate Anneal）算法来减少分布式应用job的平均完成时间。\n\n 此外，我们在SDN网络中设计和实现系统，用SDN的控制器来控制和调整网络路由。本研究分别在小规模网络环境和大规模网络环境中设计实验。实验结果表明，我们的coflow路由方法不仅在最小化平均coflow完成时间方面实现了更好的性能，而且与数据中心网络的其他现有路由解决方案相比，计算负载也非常低。"
 
     [params.information]
         enable = true
