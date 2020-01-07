@@ -3,6 +3,7 @@
 publishDir = "docs"
 languageCode = "en"
 defaultcontentlanguage = "zh-cn"
+baseURL = "https://github.com/leeif/resume"
 title = "Resume of leeif"
 theme = "hugo-devresume-theme"
 # googleAnalytics = "UA-XXXXXXX-Y"
