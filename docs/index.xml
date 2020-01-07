@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resume of leeif</title>
-    <link>https://github.com/leeif/resume/</link>
+    <link>https://leeif.github.io/resume/</link>
     <description>Recent content on Resume of leeif</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://github.com/leeif/resume/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leeif.github.io/resume/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
