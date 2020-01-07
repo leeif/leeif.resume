@@ -1,0 +1,19 @@
+
+                            <section class="project-section py-3">
+
+                              <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "contactme" }}</h3>
+                              
+                              <div class="item mb-3">
+                                  <div class="item-heading row align-items-center mb-2">
+                                  {{ range .Site.Params.contactme.list }}
+                                    <div>
+                                      <div class="contactme-item-title">{{ .title }}</div>
+                                      {{ if .qrcode }}
+                                      <img class="resume-contactme-qrcode" src="{{ .Site.BaseURL }}assets/images/{{ .qrcode }}" alt="image">
+                                      {{ end }}
+                                    </div>
+                                  {{ end }}
+                                  </div>
+                              </div><!--//item-->
+
+                          </section><!--//project-section-->
