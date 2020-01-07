@@ -190,6 +190,10 @@ theme = "hugo-devresume-theme"
         title = "Leetcode主页"
         details = "https://leetcode.com/liyifan/"
 
+        [[params.information.list]]
+        title = "简历链接"
+        details = "https://leeif.github.io/resume/"
+
     [params.contactme]
         enable = true
 
@@ -198,9 +202,9 @@ theme = "hugo-devresume-theme"
         qrcode = "wechat-qrcode.png"
 
     [params.social]
-        enable = false
+        enable = true
 
         [[params.social.list]]
-        icon = "fab fa-github-square"
-        url = "//github.com/leeif"
+        icon = "fab fa-twitter-square"
+        url = "https://twitter.com/geeklyf92610"
         title = "leeif"
