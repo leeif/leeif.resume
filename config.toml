@@ -25,7 +25,7 @@ theme = "hugo-devresume-theme"
         [[params.contact.list]]
         icon = "fas fa-phone-square"
         url = "tel:#"
-        text = "+81-08067611034"
+        text = "+81-8067611034"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:#"
