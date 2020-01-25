@@ -1,210 +1,389 @@
 # Page settings
 
+baseurl = "https://leeif.github.io/resume"
+
 publishDir = "docs"
-languageCode = "en"
-defaultcontentlanguage = "zh-cn"
-baseURL = "https://leeif.github.io/resume/"
+defaultcontentlanguage = "zh"
 title = "Resume of leeif"
 theme = "hugo-devresume-theme"
 # googleAnalytics = "UA-XXXXXXX-Y"
 
-[params]
-    author = "CowboySmall"
-    primaryColor = "#54B689"
-    textPrimaryColor = "#292929"
-    [params.profile]
-        enable = true
-        name = "李 一凡"
-        tagline = "Infrastructure & Software Engineer"
-        avatar = "avatar.png"
 
-    [params.contact]
-        enable = true
-        location = "东京"
+[params.profile]
+    enable = true
+    name = "李 一凡 (LI YIFAN)"
+    tagline = "Infrastructure & Software Engineer"
+    avatar = "avatar.png"
 
-        [[params.contact.list]]
-        icon = "fas fa-phone-square"
-        url = "tel:#"
-        text = "+81-8067611034"
-        [[params.contact.list]]
-        icon = "fas fa-envelope-square"
-        url = "mailto:#"
-        text = "geeklyf92610@gmail.com"
-        [[params.contact.list]]
-        icon = "fab fa-github-square"
-        url = "https://github.com/leeif"
-        text = "github.com/leeif"
+[languages]
+#    [languages.en]
+#        languageCode = "en"
+#        LanguageName = "English"
 
-    [params.skills]
-        enable = true
+    [languages.jp]
+        languageCode = "jp"
+        LanguageName = "日本語"
+            [languages.jp.params.contact]
+                enable = true
+                location = "東京"
 
-        [[params.skills.list]]
-        title = "擅长的编程语言"
-        [[params.skills.list.items]]
-        details = "Go/Java/Javascript/Ruby"
-        
-        [[params.skills.list]]
-        title = "擅长的技术"
-        [[params.skills.list.items]]
-        details = "Microservices/Kubernetes/Linux"
-        [[params.skills.list.items]]
-        details = "Node.js/React/Vue.js"
-        [[params.skills.list.items]]
-        details = "Apache/MySQL"
+                [[languages.jp.params.contact.list]]
+                icon = "fas fa-phone-square"
+                url = "tel:#"
+                text = "080-6761-1034"
+                [[languages.jp.params.contact.list]]
+                icon = "fas fa-envelope-square"
+                url = "mailto:#"
+                text = "geeklyf92610@gmail.com"
+                [[languages.jp.params.contact.list]]
+                icon = "fab fa-github-square"
+                url = "https://github.com/leeif"
+                text = "github.com/leeif"
 
-        [[params.skills.list]]
-        title = "感兴趣的技术"
-        [[params.skills.list.items]]
-        details = "CloudNative/DevOps"
-        [[params.skills.list.items]]
-        details = "分布式系统"
-        [[params.skills.list.items]]
-        details = "监控系统"
+            [languages.jp.params.skills]
+                enable = true
 
-    [params.education]
-        enable = true
+                [[languages.jp.params.skills.list]]
+                title = "プログラミング言語"
+                [[languages.jp.params.skills.list.items]]
+                details = "Go/Java/Javascript/Ruby"
+                
+                [[languages.jp.params.skills.list]]
+                title = "技術"
+                [[languages.jp.params.skills.list.items]]
+                details = "Microservices/Kubernetes/Linux"
+                [[languages.jp.params.skills.list.items]]
+                details = "Node.js/React/Vue.js"
+                [[languages.jp.params.skills.list.items]]
+                details = "Apache/MySQL"
 
-        [[params.education.list]]
-        degree = "计算机科学本科"
-        university = "中南大学"
-        dates = "2011 - 2015"
-        [[params.education.list]]
-        degree = "计算机科学硕士"
-        university = "日本筑波大学"
-        dates = "2015 - 2018"
+                [[languages.jp.params.skills.list]]
+                title = "興味ある領域"
+                [[languages.jp.params.skills.list.items]]
+                details = "CloudNative/DevOps"
+                [[languages.jp.params.skills.list.items]]
+                details = "分散システム"
+                [[languages.jp.params.skills.list.items]]
+                details = "監視システム"
 
-    [params.awards]
-        enable = true
+            [languages.jp.params.education]
+                enable = true
 
-        [[params.awards.list]]
-        name = "筑波大学奖学金"
-        body = "Tsukuba Scholarship"
-        date = "2017"
-        [[params.awards.list]]
-        name = "中南大学奖学金（三次）"
-        body = "Central South Scholarship"
-        date = "2011~2014"
+                [[languages.jp.params.education.list]]
+                degree = "コンピューターサイエンス"
+                university = "中国中南大学 学部"
+                dates = "2011 - 2015"
+                [[languages.jp.params.education.list]]
+                degree = "コンピューターサイエンス"
+                university = "筑波大学　大学院"
+                dates = "2015 - 2018"
+            
+             [languages.jp.params.awards]
+                enable = true
 
-    [params.languages]
-        enable = true
+                [[languages.jp.params.awards.list]]
+                name = "筑波大学奨学金"
+                body = "Tsukuba Scholarship"
+                date = "2017"
+                [[languages.jp.params.awards.list]]
+                name = "中南大学奨学金"
+                body = "Central South Scholarship"
+                date = "2011~2014"
 
-        [[params.languages.list]]
-        name = "中文"
-        level = "Native"
-        [[params.languages.list]]
-        name = "英文"
-        level = "Professional"
-        [[params.languages.list]]
-        name = "日文"
-        level = "Professional"
+            [languages.jp.params.languages]
+                enable = true
 
-    [params.interests]
-        enable = true
+                [[languages.jp.params.languages.list]]
+                name = "中国語"
+                level = "Native"
+                [[languages.jp.params.languages.list]]
+                name = "英語"
+                level = "Professional"
+                [[languages.jp.params.languages.list]]
+                name = "日本語"
+                level = "Professional"
+            
+            [languages.jp.params.interests]
+                enable = true
 
-        [[params.interests.list]]
-        name = "篮球/音乐/动漫"
+                [[languages.jp.params.interests.list]]
+                name = "バスケ/音楽/アニメ"
 
-    [params.summary]
-        enable = true
-        text = "本科和硕士毕业于计算机科学专业, 硕士从事计算机网络，SDN方向的研究。\n\n 现在在日本的社交游戏公司GREE从事运维开发方面的工作。工作上的方向主要是服务器的架构设计，MySQL数据库的研究和运维，监控系统的设计与开发。\n\n 我的兴趣很广泛，有一定的软件开发的经验，对微服务架构有少许研究，忠实的Cloud Native爱好者，对分布式系统也有着浓厚的兴趣。工作之余，自发组织小规模的APP开发。平时也是开源社区的贡献者，维护自己的一些开源项目。希望能结识更多的同道中人一起做出优秀的软件产品。"
+            [languages.jp.params.summary]
+                enable = true
+                text = "大学の時代はコンピューターサイエンス専攻で勉強しました。大学院の時はSDN関連の研究を行いました。\n\n 2018から新卒でグリー株式会社に入社し、今インフラエンジニアとして仕事をしています。普段はサーバ運用や構成設計、RDBMS(MySQL)とモニタリング関連の仕事をやっています。\n\n また、幅広い興味を持ち、Cloud Nativeやマイクロサービスなどを勉強し、仕事以外にアプリの開発もやっています。オープンソースプロジェクトにもコントリビュートしたりしています"
 
-    [params.experience]
-        enable = true
+            [languages.jp.params.experience]
+                enable = true
 
-        [[params.experience.list]]
-        title = "Infrastructure Engineer"
-        dates = "2018 - 现在"
-        company = "GREE(日本)"
-        details = "运维开发工程师，主要从事的工作内容如下："
-        [[params.experience.list.items]]
-        details = "全公司规模的服务器运维"
-        [[params.experience.list.items]]
-        details = "MySQL数据库的维护和升级"
-        [[params.experience.list.items]]
-        details = "监控系统的维护和开发"
-        [[params.experience.list.items]]
-        details = "开发部门的技术支持（环境搭建，代码审查）"
+                [[languages.jp.params.experience.list]]
+                title = "インフラエンジニア"
+                dates = "2018 - 現在"
+                company = "グリー株式会社"
+                [[languages.jp.params.experience.list.items]]
+                details = "オンプレとクラウドにおけるサーバの運用"
+                [[languages.jp.params.experience.list.items]]
+                details = "MySQLサーバの運用とバージョンアップ"
+                [[languages.jp.params.experience.list.items]]
+                details = "モニタリングシステムの運用と開発"
+                [[languages.jp.params.experience.list.items]]
+                details = "事業部の技術支援(環境構築、コードレビュー)"
 
-    [params.projects]
-        enable = true
+            [languages.jp.params.projects]
+                enable = true
 
-        [[params.projects.list]]
-        title = "数据中心及云端等基础设施的运维和管理"
-        meta = "GREE(日本)"
-        tagline = "* 负责全公司数千台数据中心服务器和几十个AWS及GCP账号的运维和管理，on-call，运维流程的文档化。\n\n * 对于数据中心的服务器和云端的服务器实例，进行定期硬件，主机更换，操作系统升级等工作。\n\n * 负责中间件的部署和维护，定期进行Apache和MySQL等中间件的升级及调优。\n\n * 负责运维工具的开发和维护。主要包括自动服务器构建，MySQL数据库快照的获取，MySQL自动Failover工具等的开发。"
+                [[languages.jp.params.projects.list]]
+                title = "オンプレとクラウドにおけるサーバの運用と管理"
+                meta = "グリー株式会社"
+                tagline = " * オンプレとクラウドサーバの運用と管理。\n\n * ApacheとMySQLなどのミドルウェアの運用と管理　\n\n * Ruby, Goなどの言語で運用ツールの開発。"
 
-        [[params.projects.list]]
-        title = "MySQL数据库升级维护"
-        meta = "GREE(日本)"
-        tagline = "* 生产环境数据库的MySQL8.0升级。 \n\n * 生产环境数据库的RBR（Row-based Replication）化。 \n\n * 数据中心的MySQL数据库向云端的迁移(AWS和GCP)。"
+                [[languages.jp.params.projects.list]]
+                title = "MySQLサーバの運用"
+                meta = "グリー株式会社"
+                tagline = "* MySQL8.0の導入 \n\n * 全台MySQLサーバのRBR（Row-based Replication）導入。 \n\n * オンプレMySQLサーバのクラウド移行（AWS, GCP）。"
 
-        [[params.projects.list]]
-        title = "URL监视系统的开发和导入"
-        meta = "GREE(日本)"
-        tagline = "数据中心的服务器集群使用Ganglia监控系统。负责Ganglia Python Module的维护。AWS及GCP集群使用Prometheus + Grafana监控系统。日志监控和收集使用Fluentd + Sumologic。进入公司以后独立完成URL监控的导入和推进。采用现有的Uptimerobot服务，使用Terraform + Jenkins实现了URL监控的自动化管理。"
+                [[languages.jp.params.projects.list]]
+                title = "外形監視の導入"
+                meta = "グリー株式会社"
+                tagline = "既存のUptimeRobotを用いで、300ほどのURL監視を導入しました。Terraform + Jenkinsで監視設定の自動化を実装しました。"
 
-        [[params.projects.list]]
-        title = "开发项目组的技术支持"
-        meta = "GREE(日本)"
-        tagline = "为开发部门搭建开发和生产环境，部署和搭建Apache，MySQL，监控等中间件，以及持续交付和持续部署的pipeline设计和运维工具的开发。参与过Kubernetes架构的项目组。"
+                [[languages.jp.params.projects.list]]
+                title = "事業部の技術支援"
+                meta = "グリー株式会社"
+                tagline = "開発・本番環境の構築、ミドルウェアの設定、デプロイフローの設計とリリース前のコードレビューなどをやっています。"
 
-        [[params.projects.list]]
-        title = "EasyJapaneseNews应用的开发"
-        link = "https://apps.apple.com/jp/app/easy-japanese-news/id1453019967"
-        meta = "团队开发"
-        tagline = "工作之余和朋友开发的通过日语新闻学习日语的软件。现已有1500左右的DAU。 前端包括iOS和Android的应用。后端采用Java，Go，Python的多语言微服务的开发。主要包括认证服务（Go），分词服务（Python），新闻服务（Java Spring Boot）。主要负责认后端的开发和持续部署的设计。所有服务均采用Docker镜像部署方式，现通过Traefik作为中间件进行Blue/Green部署。"
+                [[languages.jp.params.projects.list]]
+                title = "EasyJapaneseNewsアプリの開発"
+                link = "https://apps.apple.com/jp/app/easy-japanese-news/id1453019967"
+                meta = "チーム開発"
+                tagline = "フロントエンドはiOSとAndroidのアプリとなり、バックエンドはJava, Goでマイクロサービスの形で開発しています。主にAPIサービス、認証サービスがあります。Goで認証サービスを開発しています。すべでのサービスをdockerイメージで管理しています。Traefikをsidecarとして利用し、本番環境のdockerイメージをBlue／Greenの方式で更新を行なっています。"
 
-        [[params.projects.list]]
-        title = "Pluto"
-        link = "https://github.com/leeif/pluto"
-        meta = "开源项目"
-        tagline = "为微服务设计的授权/认证服务。提供用户注册和登录功能。通过JWT替代传统的session来实现无状态的认证。通过RBAC的来管理用户的权限，并设计了一套后台Admin系统来操作和管理RBAC。现主要用于EasyJapaneseNews的生产环境。"
+                [[languages.jp.params.projects.list]]
+                title = "Pluto"
+                link = "https://github.com/leeif/pluto"
+                meta = "Open Source"
+                tagline = "マイクロサービでも使える認証・認可システムとなります。JWTを使って、サービス間の認証を維持しています。また、RBACで権限管理機能も開発しています。"
 
-        [[params.projects.list]]
-        title = "Mercury"
-        link = "https://github.com/leeif/mercury"
-        meta = "开源项目"
-        tagline = "Mercury是一个用Go开发的，基于websocket的room-based聊天服务，旨在帮助开发者搭建聊天应用。Mercury提供基本聊天软件的业务需求和存储接口（当前支持Redis和MySQL）。未来计划用Raft来实现分布式的架构提高可用性。"
+                [[languages.jp.params.projects.list]]
+                title = "Mercury"
+                link = "https://github.com/leeif/mercury"
+                meta = "Open Source"
+                tagline = "MercuryはGo言語で開発されたWebSocketを用いたroom-basedチャットサービス。Mercuryは基本的なチャットサービスの用件を満たしてRedisかMySQLでデータの永続性を保守しています。"
 
-    [params.researchs]
-        enable = true
+            [languages.jp.params.researchs]
+                enable = true
 
-        [[params.researchs.list]]
-        title = "SDN环境下的分布式应用的Coflow路由优化"
-        meta = "硕士毕业研究"
-        tagline = "Coflow是指分布式应用中的一个任务中一组流请求。Coflow请求在其任务中的所有请求完成后完成。Coflow让我们可以在应⽤层优化⽹络传输。\n\n 本研究主要专注于解决coflow路由问题，该问题的目标是在最小化平均coflow完成时间时实现应用层的网络优化。本研究提出了一种coflow-aware路由算法，该算法使用模拟退火（Simulate Anneal）算法来减少分布式应用job的平均完成时间。\n\n 此外，我们在SDN网络中设计和实现系统，用SDN的控制器来控制和调整网络路由。本研究分别在小规模网络环境和大规模网络环境中设计实验。实验结果表明，我们的coflow路由方法不仅在最小化平均coflow完成时间方面实现了更好的性能，而且与数据中心网络的其他现有路由解决方案相比，计算负载也非常低。"
+                [[languages.jp.params.researchs.list]]
+                title = " SDNに基づくCoflow-Awareルーティングに関する研究"
+                meta = "修士卒論"
+                tagline = "Coflowは、分散アプリケーションの1ジョブ中の一連のリクエストを示します。 Coflowリクエストは、ジョブのすべてのリクエストが完了した後に完了するとのことです。 Coflowを使用すると、アプリケーション層でネットワーク伝送を最適化できます。\n\n 本研究では、Simulate Annealアルゴリズムを使用し、分散アプリケーションジョブの平均完了時間を短縮するCoflowルーティングアルゴリズムを提案しました。 SDN(Software Defined Network)環境に基づいて、SDNコントローラーを介した動的ルーティングアルゴリズムを実装しました。"
 
-    [params.information]
-        enable = true
+            [languages.jp.params.information]
+                enable = true
 
-        [[params.information.list]]
-        title = "论文发表"
-        [[params.information.list.items]]
-        details = "2017 · Yifan Li et al. \"Coflow-aware dynamic routing for SDN-based data center networks\".In: Proceedings of 9th International Conference on Wireless Communications and Signal Processing (WCSP).IEEE."
+                [[languages.jp.params.information.list]]
+                title = "論文発表"
+                [[languages.jp.params.information.list.items]]
+                details = "2017 · Yifan Li et al. \"Coflow-aware dynamic routing for SDN-based data center networks\".In: Proceedings of 9th International Conference on Wireless Communications and Signal Processing (WCSP).IEEE."
 
-        [[params.information.list]]
-        title = "Segmentfault专栏"
-        details = "https://segmentfault.com/blog/learning_hard_way"
+            [languages.jp.params.social]
+                enable = true
 
-        [[params.information.list]]
-        title = "Leetcode主页"
-        details = "https://leetcode.com/liyifan/"
+                [[languages.jp.params.social.list]]
+                icon = "fab fa-twitter-square"
+                url = "https://twitter.com/geeklyf92610"
+                title = "leeif"
 
-        [[params.information.list]]
-        title = "简历链接"
-        details = "https://leeif.github.io/resume/"
+    [languages.zh]
+        languageCode = "zh"
+        LanguageName = "中文"
+            [languages.zh.params.contact]
+                enable = true
+                location = "东京"
 
-    [params.contactme]
-        enable = true
+                [[languages.zh.params.contact.list]]
+                icon = "fas fa-phone-square"
+                url = "tel:#"
+                text = "+81-8067611034"
+                [[languages.zh.params.contact.list]]
+                icon = "fas fa-envelope-square"
+                url = "mailto:#"
+                text = "geeklyf92610@gmail.com"
+                [[languages.zh.params.contact.list]]
+                icon = "fab fa-github-square"
+                url = "https://github.com/leeif"
+                text = "github.com/leeif"
 
-        [[params.contactme.list]]
-        title = "微信"
-        qrcode = "wechat-qrcode.png"
+            [languages.zh.params.skills]
+                enable = true
 
-    [params.social]
-        enable = true
+                [[languages.zh.params.skills.list]]
+                title = "擅长的编程语言"
+                [[languages.zh.params.skills.list.items]]
+                details = "Go/Java/Javascript/Ruby"
+                
+                [[languages.zh.params.skills.list]]
+                title = "擅长的技术"
+                [[languages.zh.params.skills.list.items]]
+                details = "Microservices/Kubernetes/Linux"
+                [[languages.zh.params.skills.list.items]]
+                details = "Node.js/React/Vue.js"
+                [[languages.zh.params.skills.list.items]]
+                details = "Apache/MySQL"
 
-        [[params.social.list]]
-        icon = "fab fa-twitter-square"
-        url = "https://twitter.com/geeklyf92610"
-        title = "leeif"
+                [[languages.zh.params.skills.list]]
+                title = "感兴趣的技术"
+                [[languages.zh.params.skills.list.items]]
+                details = "CloudNative/DevOps"
+                [[languages.zh.params.skills.list.items]]
+                details = "分布式系统"
+                [[languages.zh.params.skills.list.items]]
+                details = "监控系统"
+
+            [languages.zh.params.education]
+                enable = true
+
+                [[languages.zh.params.education.list]]
+                degree = "计算机科学本科"
+                university = "中南大学"
+                dates = "2011 - 2015"
+                [[languages.zh.params.education.list]]
+                degree = "计算机科学硕士"
+                university = "日本筑波大学"
+                dates = "2015 - 2018"
+
+            [languages.zh.params.awards]
+                enable = true
+
+                [[languages.zh.params.awards.list]]
+                name = "筑波大学奖学金"
+                body = "Tsukuba Scholarship"
+                date = "2017"
+                [[languages.zh.params.awards.list]]
+                name = "中南大学奖学金（三次）"
+                body = "Central South Scholarship"
+                date = "2011~2014"
+
+            [languages.zh.params.languages]
+                enable = true
+
+                [[languages.zh.params.languages.list]]
+                name = "中文"
+                level = "Native"
+                [[languages.zh.params.languages.list]]
+                name = "英文"
+                level = "Professional"
+                [[languages.zh.params.languages.list]]
+                name = "日文"
+                level = "Professional"
+
+            [languages.zh.params.interests]
+                enable = true
+
+                [[languages.zh.params.interests.list]]
+                name = "篮球/音乐/动漫"
+
+            [languages.zh.params.summary]
+                enable = true
+                text = "本科和硕士毕业于计算机科学专业, 硕士从事计算机网络，SDN方向的研究。\n\n 现在在日本的社交游戏公司GREE从事运维开发方面的工作。工作上的方向主要是服务器的架构设计，MySQL数据库的研究和运维，监控系统的设计与开发。\n\n 我的兴趣很广泛，有一定的软件开发的经验，对微服务架构有少许研究，忠实的Cloud Native爱好者，对分布式系统也有着浓厚的兴趣。工作之余，自发组织小规模的APP开发。平时也是开源社区的贡献者，维护自己的一些开源项目。希望能结识更多的同道中人一起做出优秀的软件产品。"
+
+            [languages.zh.params.experience]
+                enable = true
+
+                [[languages.zh.params.experience.list]]
+                title = "Infrastructure Engineer"
+                dates = "2018 - 现在"
+                company = "GREE(日本)"
+                details = "运维开发工程师，主要从事的工作内容如下："
+                [[languages.zh.params.experience.list.items]]
+                details = "全公司规模的服务器运维"
+                [[languages.zh.params.experience.list.items]]
+                details = "MySQL数据库的维护和升级"
+                [[languages.zh.params.experience.list.items]]
+                details = "监控系统的维护和开发"
+                [[languages.zh.params.experience.list.items]]
+                details = "开发部门的技术支持（环境搭建，代码审查）"
+
+            [languages.zh.params.projects]
+                enable = true
+
+                [[languages.zh.params.projects.list]]
+                title = "数据中心及云端等基础设施的运维和管理"
+                meta = "GREE(日本)"
+                tagline = "* 负责全公司数千台数据中心服务器和几十个AWS及GCP账号的运维和管理，on-call，运维流程的文档化。\n\n * 对于数据中心的服务器和云端的服务器实例，进行定期硬件，主机更换，操作系统升级等工作。\n\n * 负责中间件的部署和维护，定期进行Apache和MySQL等中间件的升级及调优。\n\n * 负责运维工具的开发和维护。主要包括自动服务器构建，MySQL数据库快照的获取，MySQL自动Failover工具等的开发。"
+
+                [[languages.zh.params.projects.list]]
+                title = "MySQL数据库升级维护"
+                meta = "GREE(日本)"
+                tagline = "* 生产环境数据库的MySQL8.0升级。 \n\n * 生产环境数据库的RBR（Row-based Replication）化。 \n\n * 数据中心的MySQL数据库向云端的迁移(AWS和GCP)。"
+
+                [[languages.zh.params.projects.list]]
+                title = "URL监视系统的开发和导入"
+                meta = "GREE(日本)"
+                tagline = "数据中心的服务器集群使用Ganglia监控系统。负责Ganglia Python Module的维护。AWS及GCP集群使用Prometheus + Grafana监控系统。日志监控和收集使用Fluentd + Sumologic。进入公司以后独立完成URL监控的导入和推进。采用现有的Uptimerobot服务，使用Terraform + Jenkins实现了URL监控的自动化管理。"
+
+                [[languages.zh.params.projects.list]]
+                title = "开发项目组的技术支持"
+                meta = "GREE(日本)"
+                tagline = "为开发部门搭建开发和生产环境，部署和搭建Apache，MySQL，监控等中间件，以及持续交付和持续部署的pipeline设计和运维工具的开发。参与过Kubernetes架构的项目组。"
+
+                [[languages.zh.params.projects.list]]
+                title = "EasyJapaneseNews应用的开发"
+                link = "https://apps.apple.com/jp/app/easy-japanese-news/id1453019967"
+                meta = "团队开发"
+                tagline = "工作之余和朋友开发的通过日语新闻学习日语的软件。现已有1500左右的DAU。 前端包括iOS和Android的应用。后端采用Java，Go，Python的多语言微服务的开发。主要包括认证服务（Go），分词服务（Python），新闻服务（Java Spring Boot）。主要负责认后端的开发和持续部署的设计。所有服务均采用Docker镜像部署方式，现通过Traefik作为中间件进行Blue/Green部署。"
+
+                [[languages.zh.params.projects.list]]
+                title = "Pluto"
+                link = "https://github.com/leeif/pluto"
+                meta = "开源项目"
+                tagline = "为微服务设计的授权/认证服务。提供用户注册和登录功能。通过JWT替代传统的session来实现无状态的认证。通过RBAC的来管理用户的权限，并设计了一套后台Admin系统来操作和管理RBAC。现主要用于EasyJapaneseNews的生产环境。"
+
+                [[languages.zh.params.projects.list]]
+                title = "Mercury"
+                link = "https://github.com/leeif/mercury"
+                meta = "开源项目"
+                tagline = "Mercury是一个用Go开发的，基于websocket的room-based聊天服务，旨在帮助开发者搭建聊天应用。Mercury提供基本聊天软件的业务需求和存储接口（当前支持Redis和MySQL）。未来计划用Raft来实现分布式的架构提高可用性。"
+
+            [languages.zh.params.researchs]
+                enable = true
+
+                [[languages.zh.params.researchs.list]]
+                title = "SDN环境下的分布式应用的Coflow路由优化"
+                meta = "硕士毕业研究"
+                tagline = "Coflow是指分布式应用中的一个任务中一组流请求。Coflow请求在其任务中的所有请求完成后完成。Coflow让我们可以在应⽤层优化⽹络传输。\n\n 本研究提出了一种Coflow-aware路由算法，该算法使用模拟退火（Simulate Anneal）算法来减少分布式应用job的平均完成时间。我们在SDN网络的基础上，通过SDN的控制器实现了动态路由算法。"
+
+            [languages.zh.params.information]
+                enable = true
+
+                [[languages.zh.params.information.list]]
+                title = "论文发表"
+                [[languages.zh.params.information.list.items]]
+                details = "2017 · Yifan Li et al. \"Coflow-aware dynamic routing for SDN-based data center networks\".In: Proceedings of 9th International Conference on Wireless Communications and Signal Processing (WCSP).IEEE."
+
+                [[languages.zh.params.information.list]]
+                title = "Segmentfault专栏"
+                details = "https://segmentfault.com/blog/learning_hard_way"
+
+                [[languages.zh.params.information.list]]
+                title = "Leetcode主页"
+                details = "https://leetcode.com/liyifan/"
+
+                [[languages.zh.params.information.list]]
+                title = "简历链接"
+                details = "https://leeif.github.io/resume/"
+
+            [languages.zh.params.contactme]
+                enable = true
+
+                [[languages.zh.params.contactme.list]]
+                title = "微信"
+                qrcode = "wechat-qrcode.png"
+
+            [languages.zh.params.social]
+                enable = true
+
+                [[languages.zh.params.social.list]]
+                icon = "fab fa-twitter-square"
+                url = "https://twitter.com/geeklyf92610"
+                title = "leeif"
