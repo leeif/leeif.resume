@@ -378,6 +378,7 @@ theme = "hugo-devresume-theme"
 
                 [[languages.zh.params.contactme.list]]
                 title = "微信"
+                baseurl = "https://leeif.github.io/resume"
                 qrcode = "wechat-qrcode.png"
 
             [languages.zh.params.social]
